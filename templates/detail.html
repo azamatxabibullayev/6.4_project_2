@@ -1,0 +1,17 @@
+<title>Detail</title>
+
+
+<body>
+<img src="{{ phone.image.url }}"/><br>
+Model: {{ phone.model }}<br>
+Make: {{ phone.make }}<br>
+Category: {{ phone.category }}<br>
+Price: {{phone.price}}<br>
+Year: {{phone.year}}<br>
+Color: {{phone.color}}<br>
+
+<a href="{% url 'phones:get_info'%}">home</a><br>
+<a href="{% url 'phones:update_phones' phone.pk %}">Update</a>
+
+
+</body>

@@ -1,0 +1,11 @@
+<title>Phones</title>
+
+<h1>Phones</h1><br>
+
+
+<body>
+{% for phone in phones %}
+<a href="{% url 'phones:detail' phone.pk %}">{{ phone.model }}</a>
+{% endfor %}
+
+</body>
